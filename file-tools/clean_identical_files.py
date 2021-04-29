@@ -99,7 +99,7 @@ def move_file_list(files_to_be_moved, destination, num_files_moved, dry_run):
                     log.debug(f'-> File moved to {moved}')
         except Exception as e:
             log.error(f'!! Failure moving file {f}', e)
-        return num_files_moved
+    return num_files_moved
 
 
 def move_identical_files(identical_photos_dict, target_directory, dry_run):
